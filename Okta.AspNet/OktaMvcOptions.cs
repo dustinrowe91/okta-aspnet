@@ -61,5 +61,12 @@ namespace Okta.AspNet
         /// </summary>
         /// <seealso cref="https://docs.microsoft.com/en-us/previous-versions/aspnet/dn800270(v=vs.113)"/>
         public OpenIdConnectAuthenticationNotifications OpenIdConnectEvents { get; set; }
+
+        /// <summary>
+        /// Indicates that the authentication session lifetime (e.g. cookies) should match that of the authentication token.
+        /// If the token does not provide lifetime information then normal session lifetimes will be used.
+        /// This is enabled by default.
+        /// </summary>
+        public bool UseTokenLifetime { get; set; } = true;
     }
 }
