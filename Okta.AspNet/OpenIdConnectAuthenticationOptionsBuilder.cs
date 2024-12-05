@@ -91,6 +91,7 @@ namespace Okta.AspNet
                 BackchannelHttpHandler = backchannelHandler,
                 BackchannelTimeout = _oktaMvcOptions.BackchannelTimeout,
                 AuthenticationType = _authenticationType,
+                UseTokenLifetime = _oktaMvcOptions.UseTokenLifetime,
             };
 
             return oidcOptions;
